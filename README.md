@@ -16,7 +16,6 @@ npm start
 ### Running SASS 
 ```
 sass --watch scss:css
-
 ```
 
 ###Requirements
@@ -36,11 +35,6 @@ sass --watch scss:css
 perspective so unfortunately there aren't any included in this project
 * Please include any learning resources you may have, I have already looked in to learning Selenium and Mocha. 
 * Browser testing was conducted on all major browsers: IE, Safari, Chrome, and Firefox
-
-At a high level the navigation will have two main states:
-
-* <768px: Mobile. Hamburger icon will display in the top-left of the page. Clicking the hamburger will cause a card to slide in and overlay the content from the left. The card will contain nav and sub-nav items defined in the JSONP response
-* \>= 768px: Desktop. The nav will display as a horizontal nav. Top level nav items will display sub-nav items when clicked. No hamburger will be shown.
 
 ### Interactions using CSS and Javascript
 
