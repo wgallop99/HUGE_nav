@@ -1,0 +1,42 @@
+body {
+	margin: 0;
+  overflow-x: hidden;
+}
+
+/* mixin for breakpoints */
+
+@mixin breakpoint($name) {
+  @if $name == "small" {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+  @else if $name == "medium" {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  }
+  @else if $name == "large" {
+    @media (min-width: 1025px) {
+      @content;
+    }
+  }
+  @else if $name == "hero" {
+    @media (max-width: 920px){
+      @content;
+    }
+  }
+  @else if $name == "header" {
+    @media (max-width: 980px){
+      @content;
+    }
+  }
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+  "colors",
+    "fonts",
+    "nav",
+    "page"
+;
